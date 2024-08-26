@@ -17,15 +17,25 @@
                 border: 1px solid #333;
                 text-align: center;
             }
+            th{
+                color: blue;
+            }
+            td{
+                color: blueviolet;
+            }
+            caption{
+                border: solid 2px gold;
+            }
         </style>
     </head>
     <body>
         <p>
-            <button popovertarget="sizes">Таблица размеров</button> <button popovertarget="sizes-2">Таблица размеров</button>
+            <button popovertarget="sizes">Таблица_1</button> <button popovertarget="sizes-2">Таблица_2</button>
         </p>
         <div id="sizes" popover>
             <div class="close"><button popovertarget="sizes" popovertargetaction="hid" title="закрыть">x</button></div>
             <table>
+                <caption>Моя таблица_1</caption>
                 <tbody>
                     <tr><th>Международный размер</th><th>Российский размер</th><th>Объём груди</th><th>Объём талии</th><th>Объём бёдер</th></tr>
                     <tr><td>S</td><td>44</td><td>88</td><td>68</td><td>96</td></tr>
@@ -39,12 +49,14 @@
         <div id="sizes-2" popover>
             <div class="close"><button popovertarget="sizes-2" popovertargetaction="hid" title="закрыть">x</button></div>
             <table>
+                <caption>Моя таблица_2</caption>
                 <tbody>
-                    <tr><th>Международный размер</th><th>Российский размер</th><th>Объём груди</th><th>Объём талии</th></tr>
-                    <tr><td>S</td><td>44</td><td>88</td><td>68</td></tr>
-                    <tr><td>M</td><td>46</td><td>92</td><td>72</td></tr>
-                    <tr><td>L</td><td>48</td><td>96</td><td>76</td></tr>
-                    <tr><td>XL</td><td>50</td><td>100</td><td>80</td></tr>
+                    <tr><th>Международный размер</th><th>Российский размер</th><th>Объём груди</th><th>Объём талии</th><th>Объём бёдер</th></tr>
+                    <tr><td>S</td><td>44</td><td>88</td><td>68</td><td>96</td></tr>
+                    <tr><td>M</td><td>46</td><td>92</td><td>72</td><td>100</td></tr>
+                    <tr><td>L</td><td>48</td><td>96</td><td>76</td>><td>104</td</tr>
+                    <tr><td>XL</td><td>50</td><td>100</td><td>80</td><td>108</td></tr>
+                    <tr><td>XXL</td><td>52</td><td>104</td><td>85</td><td>112</td></tr>
                 </tbody>
             </table>
         </div>
