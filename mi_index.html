@@ -9,5 +9,26 @@
   </head>
   <body>
     <div class="bg-primary text-blac">как-то так</div>
+      <div class="accordion" id="accordion">
+        <div class="card">
+          <div class="card-header" id="headOne">
+            <h2 class="mb-1">
+              <button class="btn btn-link btn-block text-left" type="button" data-target="#itemOne" data-toggle="collapse" aria-expanded="true">
+                ЗАГОЛОВОК-1
+              </button>
+            </h2>
+          </div>
+          <div id="itemOne" class="collapse show-sm" aria-labelledby="headOne" data-parent="#accordion">
+            <div class="card-body">
+              Vitae consequuntur possimus libero
+              facere rerum vero consequatur nostrum
+              velit, quas in, placeat distinctio,
+              cum provident nemo aliquam. Asperiores
+              explicabo labore minus.
+            </div>
+          </div>
+        </div>
+
+      </div>
   </body>
 </html>
