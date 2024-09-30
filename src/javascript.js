@@ -37,3 +37,41 @@ a = Number(a);
 c = eu;
 b = a * c;
 alert("Результат -  " + b + ("eu"))
+
+const MB = 820;
+let flash;
+flash = prompt('Каков объем вашей флешки в Гб? ')
+flash = Number(flash);
+size = Math.trunc(flash * 1000 / MB);
+if (size < 0) {
+  alert('Ваша флешка перезаполнена, освободите пространство');
+}
+else {
+  alert('На флешку поместится ' + size + ' файлов объемом 820 Мб');
+}
+
+let num,A,B,C;
+num = prompt('Введите трехзначное число: ');
+A = Number(num % 10);
+B = Number((num - A) / 10 % 10);
+C = Number((num - A - B * 10) / 100);
+alert('Зеркально: ' + (A * 100 + B * 10 + C));
+
+let many,shoc;
+many = prompt("Cколько у вас денег? ");
+shoc = prompt("И почем шоколадка? ");
+many = Number(many);
+shoc = Number(shoc);
+res = Math.trunc(many / shoc);
+ch = many - shoc * res;
+if (res < 1) {
+  alert('у Вас не хватает денег. ');
+}
+else {
+  alert('Ва получите ' + res + ' шоколадки, и сдачу ' + (many - shoc * res) + ' р ');
+}
+
+let u;
+u = prompt('Введите число: ');
+u = Number(u);
+alert((parseInt(u) % 2 == 0) ? "Ваше число чётное" : "Ваше число нечётное");
