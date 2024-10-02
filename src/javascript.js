@@ -1,4 +1,4 @@
-// console.log ("hello from javascript");
+console.log ("hello from javascript");
 
 // let name;
 // name = prompt("Нипишите ваше имя")
@@ -80,36 +80,36 @@ var obj = new Object()
 var obl2 = {}
 var student = new Object();
 student["Name"] = ("Anton");
-student["Age"] = 23;
-alert(student["Name"]);
-alert(student["Age"]);
+student["Age"] = "23 года";
+console.log(student["Name"]);
+console.log(student["Age"]);
 var firm = {}
 firm.Name = "Star Inc";
 firm.Address = "Nevskiy prospect";
-alert(firm.Name);
-alert(firm.Address);
+console.log(firm.Name);
+console.log(firm.Address);
 var dog = {}
 dog["Name of dog"] = "Caesar";
-dog.Age = 3;
-alert(dog["Name of dog"]);
-alert(dog.Age);
+dog.Age = "3 года";
+console.log(dog["Name of dog"]);
+console.log(dog.Age);
 var cat = {}
 cat.Name = "Pusya";
-cat.Age = 2;
-alert(cat.Name);
-alert(cat.Age);
+cat.Age = "2 года";
+console.log(cat.Name);
+console.log(cat.Age);
 if ("Address" in firm) {
-  alert("da " + firm.Address);
+  console.log("da " + firm.Address);
 }
 else {
-  alert("netu");
+  console.log("netu");
 }
 
 var student2 = {
   name: "Vitas",
   LastName: "Petrov",
-  age: 23
+  age: "23 года"
 }
-alert(student2.name)
-alert(student2.LastName)
-alert(student2.age)
+console.log(student2.name)
+console.log(student2.LastName)
+console.log(student2.age)
