@@ -106,10 +106,33 @@ else {
 }
 
 var student2 = {
-  name: "Vitas",
+  Name: "Vitas",
   LastName: "Petrov",
-  age: "23 года"
+  age: "23 года",
 }
-console.log(student2.name)
+console.log(student2)
+console.log(student2.Name)
 console.log(student2.LastName)
 console.log(student2.age)
+
+const message = new String("Hello");
+console.log(message[3]);
+console.log(message[0]);
+console.log(message[2]);
+console.log(message.length,"simvolov");
+console.log(message.repeat(2))
+
+const hello = "привет мир . пока мир .";
+const key = "мир";
+const world = hello.substring(0,6);
+const bey = hello.substring(13,17);
+const bye = hello.substring(18,21)
+const firstPos = hello.indexOf(key,10);
+const lastPos = hello.lastIndexOf(key);
+console.log(firstPos);
+console.log(lastPos);
+console.log(hello.includes("пока",17));
+console.log(hello.includes("мир",18));
+console.log(world);
+console.log(bey)
+console.log(bye)
