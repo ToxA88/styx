@@ -123,16 +123,32 @@ console.log(message.length,"simvolov");
 console.log(message.repeat(2))
 
 const hello = "привет мир . пока мир .";
-const key = "мир";
-const world = hello.substring(0,6);
+const key = "мир".padStart(10,"привет ");
+const world = hello.substring(6,0);
 const bey = hello.substring(13,17);
-const bye = hello.substring(18,21)
-const firstPos = hello.indexOf(key,10);
+const bye = hello.slice(-10,-1);
+const firstPos = hello.indexOf(key);
 const lastPos = hello.lastIndexOf(key);
+const eye = hello.substr(6,12);
+const bor = hello.concat(key);
+const tir = bye.replace("пока","привет");
+const heyParts = hello.split(" ");
 console.log(firstPos);
 console.log(lastPos);
-console.log(hello.includes("пока",17));
+console.log(hello.includes("пока",12));
 console.log(hello.includes("мир",18));
 console.log(world);
-console.log(bey)
-console.log(bye)
+console.log(bey);
+console.log(bye);
+console.log(eye);
+console.log(eye.toUpperCase());
+console.log(eye.charCodeAt(1),eye.charAt(1));
+console.log(eye.trim());
+console.log(bor)
+console.log(tir.repeat(3))
+console.log(heyParts)
+console.log(hello.startsWith("п"))
+console.log(hello.endsWith("."))
+console.log(hello.startsWith("р",9))
+console.log(hello.startsWith("п",hello.length-10))
+console.log(key)
