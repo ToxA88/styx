@@ -10,42 +10,37 @@
 		<h3>Изучение JavaScript.</h3>
 	</body>
 	<script>
-		console.log("Hi world !");
-		console.log("{:-)");
+		
 
-		let age;
-		age = prompt(" ")
-		let result;
-		if (age >= 18){
-			result = "ok";
-		}else {
-			result = "error";
-		}
-		console.log(result);
-
-		let radiobtn = 1;
-		if (radiobtn == 1){
-			console.log("1")
-		}else if (radiobtn == 2){
-			console.log("2")
-		}else {
-			consoe.log("3")
+		
+		let cars = new Array();
+		cars = ["bmv","mazda","kia","reno","lada","toyota"]
+	
+		cars.unshift("false");
+		cars.push("false");
+		
+		for (const car of cars){ 
+			console.log(car)
 		}
 
-		const myArray = [];
-		const people = ["Tanya","Ivan","Dima"];
-		people[3] = "Sergey";
-		console.log(people[0]);
-		console.log(people[2]);
-		console.log(people[3]);
-		console.log(people);
+		cars.pop()
+		
+		for (let i=0; i < cars.length; i++){
+			
+				if (i % 2 > 0)
+			console.log(i,cars[i])
+		}
+	
+		for (let i=0; i < cars.length; i++){
+			if (i % 2 == 0)
+			
+			console.log(i,cars[i])
+		}
+		cars.shift()
+		
+		for (const car of cars){
+			console.log(car)
+		}
 
-		const peopple = [
-			["Dima",23,false],
-			["Anton",36,true,["js","python","1C"]],
-			["Ivan",33,false]
-		]
-		// console.log(peopple)
-		// console.log(peopple)
 	</script>
 </html>

@@ -152,3 +152,43 @@ console.log ("hello from javascript");
 // console.log(hello.startsWith("р",9))
 // console.log(hello.startsWith("п",hello.length-10))
 // console.log(key)
+
+
+console.log("Hi world !")
+// let age = 23;
+// age = prompt(" ")
+// let result;
+// if (age >= 18){
+// 	result = "ok";
+// }else {
+// 	result = "error";
+// }
+// console.log(result);
+
+// let radiobtn = 1;
+// if (radiobtn == 1){
+// 	console.log("1")
+// }else if (radiobtn == 2){
+// 	console.log("2")
+// }else {
+// 	consoe.log("3")
+// }
+
+// const myArray = [];
+// const people = ["Tanya","Ivan","Dima"];
+// people[3] = "Sergey";
+// console.log(people[0]);
+// console.log(people[2]);
+// console.log(people[3]);
+// console.log(people);
+
+// const peopple = [
+// 	["Dima",23,false],
+// 	["Anton",36,true,["js","python","1C"]],
+// 	["Ivan",33,false]
+// ]
+// peopple.unshift("verst")
+
+// console.log(peopple[2][0])
+// console.log(peopple[2][3][0])
+// console.log(peopple)
