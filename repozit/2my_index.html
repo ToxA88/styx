@@ -10,37 +10,97 @@
 		<h3>Изучение JavaScript.</h3>
 	</body>
 	<script>
+		function hello(msg,name){
+			console.log("start message function")
+			
+			console.log(`Hello ${name}`);
+			
+		}
+		function sumNumber(a,b){
+			console.log(`${a} + ${b} = ${a+b}`);
+		}
 		
+		const message = function(msg){
+			console.log(msg)
+		}
+		function print(){
+			console.log("Outer function")
+			printHello();
+			printHello();
+			function printHello(){
+				console.log("Inner function")
+			}
+		}
+		hello(info,"Ivan");
+		print()
+		message("Function withuut name")
+		const sumNumFunction = sumNumber;
+		sumNumFunction(5,6)
+		info("ivan",23,"moscow")
+		sumNumber(1,3)
+		
+		function info(name,age,citi){
+			console.log("print info")
+			console.log(`hello, my name is ${name}. i am ${age} years old. i am from ${citi}`)
+		}
+		function hello1(name){
+			console.log(`Hello ${name}`);
+			
+		}
+		function mnyFunc(firstFunc,secondFunc){
+			firstFunc();
+			secondFunc();
+		}
+		mnyFunc(info,hello1)
+
+		function printPersone(peron){
+			console.log("name",peron[0])
+			console.log("age",peron[1])
+			console.log("email",peron[2])
+		}
+
+		function printPersonSpread(name,age,email){
+			console.log("name",name);
+			console.log("age",age);
+			console.log("email",email);
+		}
+
+		const Ivan = ["Ivan",32,"Ivan@mail.ru"]
+		printPersone(Ivan)		
+		printPersonSpread(...Ivan)
+		
+		console.log("[ Hi world !]")
+
 
 		
-		let cars = new Array();
-		cars = ["bmv","mazda","kia","reno","lada","toyota"]
+		// let cars = new Array();
+		// cars = ["bmv","mazda","kia","reno","lada","toyota"]
 	
-		cars.unshift("false");
-		cars.push("false");
+		// cars.unshift("false");
+		// cars.push("false");
 		
-		for (const car of cars){ 
-			console.log(car)
-		}
+		// for (const car of cars){ 
+		// 	console.log(car)
+		// }
 
-		cars.pop()
+		// cars.pop()
 		
-		for (let i=0; i < cars.length; i++){
+		// for (let i=0; i < cars.length; i++){
 			
-				if (i % 2 > 0)
-			console.log(i,cars[i])
-		}
+		// 		if (i % 2 > 0)
+		// 	console.log(i,cars[i])
+		// }
 	
-		for (let i=0; i < cars.length; i++){
-			if (i % 2 == 0)
+		// for (let i=0; i < cars.length; i++){
+		// 	if (i % 2 == 0)
 			
-			console.log(i,cars[i])
-		}
-		cars.shift()
+		// 	console.log(i,cars[i])
+		// }
+		// cars.shift()
 		
-		for (const car of cars){
-			console.log(car)
-		}
+		// for (const car of cars){
+		// 	console.log(car)
+		// }
 
 	</script>
 </html>
