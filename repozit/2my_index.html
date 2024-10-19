@@ -8,8 +8,16 @@
 	<body style="text-align: center;">
 		<h1>Привет как дела?</h1>
 		<h3>Изучение JavaScript.</h3>
+		<button id="btn">Нажми меня</button>
 	</body>
 	<script>
+		// function handleClick(){
+		// 	alert("Кнопка нажата")
+		// }
+		document.getElementById('btn').addEventListener('click', () => {
+			alert('Нажал , Ок , и что?');
+		});
+
 		function hello(msg,name){
 			console.log("start message function")
 			
