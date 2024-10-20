@@ -37,11 +37,24 @@
 		console.log(hello.startsWith("р",9));
 		console.log(hello.startsWith("п",hello.length-10));
 		console.log(key);
-
+	
+			
+		
+		
+		
 	</script>
   <body style="text-align:center;">
     <div id="1" style="display: inline-block;">
     <h2>Привет , как дела ?</h2>
+		<button id="btn">Click my</button>
   </div>
   </body>
+	<script>
+		document.getElementById('btn').addEventListener('click', function() {
+				const res = prompt('number')
+				console.log(res)
+				alert(res);
+				
+			});
+	</script>
 </html>
